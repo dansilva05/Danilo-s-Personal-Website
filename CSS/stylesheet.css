@@ -181,7 +181,7 @@ figcaption {
 
 .quote blockquote {
     order: 2;
-    flex: 0 o auto;
+    flex: 0 0 auto;
     align-self: flex-end;
     text-align: right;
     font-size: 110%;
