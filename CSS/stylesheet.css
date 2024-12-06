@@ -16,6 +16,7 @@ p {
 }
 
 header {
+    margin-top: 10px;
     width: 100%;
     padding: 20px 0 20px;
     background-color: #fca311;
@@ -33,6 +34,10 @@ header > h2, p {
     padding-top: 0.25em;
     margin-bottom: 0;
     margin-top: 0.25em;
+}
+
+header > h2 {
+    padding-left: 35px;
 }
 
 header > p {
@@ -56,10 +61,6 @@ h2 {
     color: black;
     padding-top: 0.5em;
     padding-left: 20px;
-}
-
-header > h2 {
-    padding-left: 35px;
 }
 
 h3 {
@@ -189,18 +190,217 @@ figcaption {
     text-align: right;
     font-size: 110%;
     color: #14213d;
+    font-style: italic;
 }
 caption {
     font-weight: bold;
     font-size: 120%;
 }
 
-table, th, td {
-    border: solid #fca311 2px;
-}
-
 table {
     width: 70%;
     margin: 0 auto;
     border-collapse: collapse;
+    border: solid #14213d 1px;
+}
+
+th {
+    background-color: #14213d;
+    color: white;
+} 
+
+tr:nth-of-type(even) {
+    background-color: #f2f2f2; 
+} 
+
+tr:hover { background-color: #fca311;
+    color: #14213d;
+} 
+
+.ui.seven.item.tabular.menu {
+    width: 100%;
+    background-color: #14213d;
+    padding: 1em 0;
+    margin-bottom: 0px;
+}
+
+.ui.seven.item.tabular.menu a {
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    padding: 10px 25px;
+    justify-content: space-around;
+}
+
+.ui.seven.item.tabular.menu a:hover {
+    text-decoration: underline;
+}
+
+.ui.seven.item.tabular.menu a:active {
+    color: red;
+}
+
+#body {
+    font-family: Verdana, Helvetica, Arial, sans-serif !important;
+    background-color: #000000;
+    background-image: url(../images/background%20black.jpg);
+    line-height: 1.25;
+}
+
+header > h1.h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.h1 {
+    font-size: 300%;
+    color: white;
+    padding: 1.8em 20px 8px;
+    margin: 0;
+}
+
+div > .ui.sixteen.wide.column.container.grid {
+    margin-top: 0px;
+    width: 97.8%;
+}
+
+div > .ui.content.grid {
+    background-color: #e5e5e5;
+    padding: 2em;
+    margin-top: 0px;
+}
+
+div.ui.content.grid > h2.ui.sixteen.wide.column.grid {
+    font-size: 200%;
+    color: black;
+    padding-top: 0.5em;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+div.ui.content.grid > h3.ui.sixteen.wide.column.grid {
+    padding-left: 25px;
+    color: black;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ui.content.grid p {
+    color: black;
+    font-size: 1.1em;
+}
+
+div > .ui.footer {
+    width: 100%;
+    background-color: #14213d;
+    text-align: center;
+    padding: 1em;
+}
+
+.ui.footer > p {
+    color: white;
+}
+
+figcaption {
+    font-size: 200%;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+table.ui.padded.table > tr, th, td {
+    font-size: 110%;
+}
+	
+.ui.card .description {
+    font-style:italic;
+    font-weight:bold;
+}
+
+.ui.card .date {
+    color: #14213d;
+}
+
+hr {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: solid #14213d 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+hr.hidden {
+    border: hidden;
+}
+
+div.ui.centered.container {
+    display: flex;
+    justify-content: center;
+}
+
+section.ui.centered.container {
+    display: block;
+    justify-content: flex-end;
+}
+
+.form-row {
+  display: flex;
+  padding: 10px 0;
+}
+
+form input, form select, form textarera {
+  flex: 1;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.check > label {
+  display: block;
+}
+
+.form-row > label, legend {
+  flex: 0 1 20%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  margin-left: -1em;
+}
+
+form button {
+  padding: 1em;
+  background: gray;
+  color: white;
+  border: 0;
+  margin-top: 1em;
+}
+
+form#booking input[type="text"]:valid,
+form#booking input[type="date"]:valid,
+form#booking input[type="email"]:valid,
+form#booking input[type="number"]:valid {
+  color: green;
+}
+
+form#booking input[type="text"]:invalid,
+form#booking input[type="date"]:invalid,
+form#booking input[type="email"]:invalid,
+form#booking input[type="number"]:invalid {
+  color: red;
+  border-color: red;
+}
+
+section#form {
+  flex: 70%;
+}
+
+section#image {
+  flex: 30%;
 }
