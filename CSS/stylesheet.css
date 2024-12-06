@@ -278,12 +278,14 @@ div.ui.content.grid > h2.ui.sixteen.wide.column.grid {
     font-weight: bold;
 }
 
-div.ui.content.grid > h3.ui.sixteen.wide.column.grid {
+h3.ui.sixteen.wide.column.grid {
     padding-left: 25px;
+    padding-bottom: 15px;
+    padding: 25px 0px 15px 25px;
     color: black;
     font-size: 200%;
     font-weight: bold;
-    text-align: center;
+    justify-content: center;
 }
 
 .ui.content.grid p {
@@ -401,6 +403,6 @@ section#form {
   flex: 70%;
 }
 
-section#image {
+div#image {
   flex: 30%;
 }
